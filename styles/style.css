@@ -144,7 +144,7 @@
   font-family: var(--font-accent), fantasy;
   font-size: 14px;
   cursor: pointer;
-  transition: box-shadow .3s;
+  transition: box-shadow .5s;
 }
 
 .button:focus {
@@ -282,6 +282,7 @@ body:has(.dialog[open]) {
 
 .dialog__text {
   font-family: var(--font-accent), fantasy;
+  font-weight: var(--maint-text-font-weight);
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1.5;
@@ -291,6 +292,7 @@ body:has(.dialog[open]) {
   min-inline-size: 100%;
   padding-block: 12.5px;
   grid-column: 1 / -1;
+  text-transform: uppercase;
 }
 
 @media (width <= 500px) {
@@ -335,5 +337,5 @@ body:has(.dialog[open]) {
 }
 
 .hue-filter {
-  filter: hue-rotate(150deg);
+  filter: hue-rotate(150deg) opacity(0.9);
 }
